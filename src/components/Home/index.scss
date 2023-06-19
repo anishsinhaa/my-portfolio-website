@@ -1,0 +1,145 @@
+.homepage {
+  .text-zone {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    max-height: 90%;
+
+    h1 {
+      color: aliceblue;
+      font-family: 'Coolvetica';
+      font-size: 55px;
+      font-weight: 400;
+      .intro {
+        animation: fadeIn 1s 2.5s backwards;
+      }
+      .hi {
+        animation: fadeIn 1s 1s backwards;
+      }
+      .a-letter {
+        font-size: 90px;
+        color: #fdf700;
+      }
+    }
+    p {
+      color: aliceblue;
+      font-family: 'Poppins';
+      font-size: 30px;
+      animation: fadeIn 1s 4s backwards;
+    }
+    .flat-button {
+      color: #fdf700;
+      font-family: sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: 4px;
+      animation: fadeIn 1s 5s backwards;
+      float: left;
+      padding: 10px 18px;
+      border: 1px solid #fdf700;
+
+      &:hover {
+        background-color: #fdf700;
+        color: black;
+      }
+    }
+  }
+  //   Solar System Animation
+  .solarsystem-container {
+    animation: fadeIn 1s 5s backwards;
+    border-radius: 50%;
+    left:40%;
+    margin: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: absolute;
+  }
+  .sun {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+  }
+  .earth,
+  .moon {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+  }
+  .earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+  }
+  .moon {
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+  }
+  .earth::before,
+  .moon::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+  }
+  .earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: rgb(48, 64, 170);
+  }
+  .moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+  }
+  @keyframes orbit {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage {
+    overflow: hidden;
+    .text-zone {
+        max-width: 500px;
+        left: 30%;
+        font-size: small;
+        max-height: fit-content;
+        h1{font-size: 20px;
+            .a-letter {
+                font-size: 30px;}}
+        p{font-size: 20px;}
+
+    } 
+  }
+ 
+  //   Solar System Animation
+  .solarsystem-container {
+    display: none;
+  }
+}
