@@ -4,6 +4,7 @@ import digitalcard from '../../assets/images/Projects/digitalcard.png'
 import railway from '../../assets/images/Projects/railway.png'
 import travel from '../../assets/images/Projects/travel.png'
 import notes from '../../assets/images/Projects/notes.png'
+import chat from '../../assets/images/Projects/chat.zeus.png'
 
 
 const projects = [
@@ -42,6 +43,13 @@ const projects = [
     github:"https://github.com/anishsinhaa/simple-notes",
     deploy:"https://simplenotes-as.netlify.app"
   },
+  {
+    img: chat,
+    title: 'Chat.zeus',
+    desc: 'Chat.zeus is a chat app built using ReactJS & Firebase',
+    github:"https://github.com/anishsinhaa/Chat.zeus",
+    deploy:"https://chat-zeus.netlify.app"
+  }
 ]
 
 export default projects
