@@ -142,12 +142,18 @@
         a.linkedin {
             &::after {
               content: 'LinkedIn';
-              bottom: 70px;
+              bottom: 100px;
             }
           }
           a.github {
             &::after {
               content: 'Github';
+              bottom: 70px;
+            }
+          }
+          a.leetcode {
+            &::after {
+              content: 'LeetCode';
               bottom: 40px;
             }
           }

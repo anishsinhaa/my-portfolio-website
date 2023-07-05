@@ -3,7 +3,7 @@ import './index.scss'
 import logo from '../../assets/images/logo.png'
 import sublogo from '../../assets/images/sublogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faEnvelope, faHome, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
@@ -53,6 +53,11 @@ const Sidebar = () => {
         <li>
           <a target="_black" className="github" rel='moreferrer' href="https://github.com/anishsinhaa">
             <FontAwesomeIcon icon={faGithub} color="#4d4d43" />
+          </a>
+        </li>
+        <li>
+          <a target="_black" className="leetcode" rel='moreferrer' href="https://leetcode.com/anishsinhaa/">
+            <FontAwesomeIcon icon={faCode} color="#4d4d43" />
           </a>
         </li>
         <li>
