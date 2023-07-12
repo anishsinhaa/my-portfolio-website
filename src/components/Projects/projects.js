@@ -5,6 +5,7 @@ import railway from '../../assets/images/Projects/railway.png'
 import travel from '../../assets/images/Projects/travel.png'
 import notes from '../../assets/images/Projects/notes.png'
 import chat from '../../assets/images/Projects/chat.zeus.png'
+import cineverse from '../../assets/images/Projects/cineverse-zeus.png'
 
 
 const projects = [
@@ -49,6 +50,13 @@ const projects = [
     desc: 'Chat.zeus is a chat app built using ReactJS & Firebase',
     github:"https://github.com/anishsinhaa/Chat.zeus",
     deploy:"https://chat-zeus.netlify.app"
+  },
+  {
+    img: cineverse,
+    title: 'CineVerse',
+    desc: "CineVerse is a IMDB clone website using ReactJS, JavaScript, HTML and CSS which uses TMDB's API (The Movie Database) to get movie details.",
+    github:"https://github.com/anishsinhaa/Cineverse",
+    deploy:"https://cineverse-zeus.netlify.app"
   }
 ]
 
