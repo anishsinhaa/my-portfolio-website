@@ -7,10 +7,10 @@ const ProjectList = () => {
     return (
       <div key={index} className="project">
         <a href={project.deploy?project.deploy: project.github} target="_blank" rel="noopener noreferrer">
-          <img src={project.img} alt="cover"></img>
-        </a>
-        <h3>{project.title}</h3>
+          <img className='projectImg' src={project.img} alt="cover"></img>
+        <h3>{project.title}</h3></a>
         <p>{project.desc}</p>
+        <div className='keySkills'>{project.keyskills? project.keyskills.map((skill)=><span>{skill}</span>):""}</div>
         <small>
           <a href={project.github} target="_blank" rel="noopener noreferrer">
             GITHUB REPO
