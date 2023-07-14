@@ -1,6 +1,6 @@
 
 import memegen from '../../assets/images/Projects/meme-gen.png'
-import digitalcard from '../../assets/images/Projects/digitalcard.png'
+import textCrypt from '../../assets/images/Projects/textCrypt.png'
 import railway from '../../assets/images/Projects/railway.png'
 import travel from '../../assets/images/Projects/travel.png'
 import notes from '../../assets/images/Projects/notes.png'
@@ -34,14 +34,6 @@ const projects = [
     keyskills:["ReactJS", "JavaScript", "HTML", "CSS"]
   },
   {
-    img: digitalcard,
-    title: 'Digital Business Card',
-    desc: 'A simple Digital Business Card using ReactJS, JavaScript, HTML & CSS.',
-    github:"https://github.com/anishsinhaa/digital-business-card",
-    deploy:"https://mybusinesscard-as.netlify.app",
-    keyskills:["ReactJS", "JavaScript", "HTML", "CSS"]
-  },
-  {
     img: notes,
     title: 'Simple Notes App',
     desc: 'Simple Notes/To-Do app using ReactJS, HTML, JavaScript and CSS',
@@ -64,6 +56,13 @@ const projects = [
     github:"https://github.com/anishsinhaa/Cineverse",
     deploy:"https://cineverse-zeus.netlify.app",
     keyskills:["ReactJS", "JavaScript", "HTML", "CSS","API"]
+  },
+  {
+    img: textCrypt,
+    title: 'TextCrypt',
+    desc: 'TextCrypt is a text encryption & decryption tool built using Python.',
+    github:"https://github.com/anishsinhaa/TextCrypt",
+    keyskills:["Pyhton"]
   }
 ]
 
