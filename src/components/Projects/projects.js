@@ -40,7 +40,7 @@ const projects = [
   {
     img: notes,
     title: 'Simple Notes App',
-    desc: 'A simple Digital Business Card using ReactJS, JavaScript, HTML & CSS.',
+    desc: 'Simple Notes/To-Do app using ReactJS, HTML, JavaScript and CSS',
     github:"https://github.com/anishsinhaa/simple-notes",
     deploy:"https://simplenotes-as.netlify.app"
   },
