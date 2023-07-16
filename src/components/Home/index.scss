@@ -7,7 +7,7 @@
     max-height: 90%;
 
     h1 {
-      color: aliceblue;
+      color: black;
       font-family: 'Coolvetica';
       font-size: 55px;
       font-weight: 400;
@@ -23,13 +23,13 @@
       }
     }
     p {
-      color: aliceblue;
+      color: black;
       font-family: 'Poppins';
       font-size: 30px;
       animation: fadeIn 1s 4s backwards;
     }
     .flat-button {
-      color: #fdf700;
+      color:black;
       font-family: sans-serif;
       font-size: 13px;
       font-weight: 400;
@@ -38,11 +38,12 @@
       animation: fadeIn 1s 5s backwards;
       float: left;
       padding: 10px 18px;
-      border: 1px solid #fdf700;
+      border: 1px solid black;
 
       &:hover {
         background-color: #fdf700;
         color: black;
+        border: 1px solid white;
       }
     }
   }

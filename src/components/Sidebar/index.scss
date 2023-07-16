@@ -116,7 +116,7 @@
             line-height: 15px;
 
             &:hover {
-                color: #ffd700;
+              color: #ffd700;
         
                 svg {
                   opacity: 0;
@@ -142,7 +142,7 @@
         a.linkedin {
             &::after {
               content: 'LinkedIn';
-              bottom: 100px;
+               bottom: 100px;
             }
           }
           a.github {
