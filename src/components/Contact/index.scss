@@ -3,6 +3,7 @@
 
   h1 {
     top: 10%;
+    cursor:context-menu;
   }
   p {
     position: relative;
@@ -10,10 +11,11 @@
     animation: fadeIn 1s 2s backwards;
     font-size: 20px;
     font-style: 13px;
-    color: white;
+    color: black;
     font-family: sans-serif;
     font-weight: 300;
     max-width: 800px;
+    cursor:context-menu;
   }
   .contact-form {
     animation: fadeIn 1s 2s backwards;
@@ -53,7 +55,11 @@
       input[type='email'] {
         width: 100%;
         border: 0;
-        background: #115173;
+        background: black;
+        &::placeholder{
+          font-family: "Poppins";
+          color: white;
+        }
         height: 50px;
         font-size: 16px;
         color: #fff;
@@ -61,13 +67,17 @@
         box-sizing: border-box;
       }
       textarea {
+        &::placeholder{
+          font-family: "Poppins";
+          color: white;
+        }
         width: 100%;
         border: 0; 
-        background: #115173;
+        background: black;
         height: 50px;
         font-size: 16px;
         color: #fff;
-        padding: 0 20px;
+        padding: 10px 20px;
         min-height: 150px;
         box-sizing: border-box;
       }

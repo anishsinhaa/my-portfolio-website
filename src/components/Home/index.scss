@@ -11,6 +11,7 @@
       font-family: 'Coolvetica';
       font-size: 55px;
       font-weight: 400;
+      cursor:context-menu;
       .intro {
         animation: fadeIn 1s 2.5s backwards;
       }
@@ -23,6 +24,7 @@
       }
     }
     p {
+      cursor:context-menu;
       color: black;
       font-family: 'Poppins';
       font-size: 30px;

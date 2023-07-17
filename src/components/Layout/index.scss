@@ -11,6 +11,7 @@
 }
 
 .tags{
+    cursor:context-menu;
     color: #ffd700;
     opacity: 0.3;
     position: absolute;
@@ -43,7 +44,7 @@
 
 .container{
     .text-zone{
-        
+        cursor:context-menu;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

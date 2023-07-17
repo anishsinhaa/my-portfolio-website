@@ -5,7 +5,10 @@ import railway from '../../assets/images/Projects/railway.png'
 import travel from '../../assets/images/Projects/travel.png'
 import notes from '../../assets/images/Projects/notes.png'
 import chat from '../../assets/images/Projects/chat.zeus.png'
-import cineverse from '../../assets/images/Projects/cineverse-zeus.png'
+import cineverse from '../../assets/images/Projects/cineverse-zeus.png' 
+import CurrencyConverter from '../../assets/images/Projects/CurrencyConverter.png'
+import snakeGame from '../../assets/images/Projects/snakegame.png'
+
 
 
 const projects = [
@@ -19,7 +22,7 @@ const projects = [
   },
   {
     img: railway,
-    title: 'Railway System Prototype',
+    title: 'Railway System',
     desc: 'RAILWAY MANAGEMENT SYSTEM is a Protoype project built using JavaScript, HTML & CSS.',
     github:"https://github.com/anishsinhaa/railway-system",
     deploy:"https://railway-system-prototype.netlify.app",
@@ -63,7 +66,22 @@ const projects = [
     desc: 'TextCrypt is a text encryption & decryption tool built using Python.',
     github:"https://github.com/anishsinhaa/TextCrypt",
     keyskills:["Pyhton"]
+  },
+  {
+    img: CurrencyConverter,
+    title: 'CurrencyConverter',
+    desc: 'Simple Currency Converter built using Java which uses ExchangeRates Api to get the current exchange rates',
+    github:"https://github.com/anishsinhaa/CurrencyConverter",
+    keyskills:["JAVA", "JavaSwing","JavaAWT"]
+  },
+  {
+    img: snakeGame,
+    title: 'Fang-Frenzy',
+    desc: 'Fang-Frenzy is a Snake Game built with JAVA. It randomly spawns food for the snake to eat and score points.',
+    github:"https://github.com/anishsinhaa/FangFrenzy-SnakeGame",
+    keyskills:["JAVA", "JavaSwing","JavaAWT"]
   }
+  
 ]
 
 export default projects
