@@ -30,6 +30,7 @@ const About = () => {
             <ul>
               <li>Java | JavaScript | ReactJS | HTML | CSS | Pyhton.</li>
               <li>Certification in Developer Virtual Experience Program by Accenture Nordics on the Forage Website.</li>
+              <li>Certification in Intro to Software Engineering Virtual Experience Program by Cisco on the Forage Website.</li>
             </ul>
           </small>
         </p>
