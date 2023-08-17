@@ -123,26 +123,59 @@
       transform: rotate(360deg);
     }
   }
-}
-
-@media only screen and (max-width: 600px) {
-  .homepage {
+  @media only screen and (max-width: 600px) {
     overflow: hidden;
+  
+    .page{
+      max-width: 100%;
+    }
     .text-zone {
-        max-width: 500px;
-        left: 30%;
-        font-size: small;
-        max-height: fit-content;
-        h1{font-size: 20px;
-            .a-letter {
-                font-size: 30px;}}
-        p{font-size: 20px;}
-
-    } 
-  }
- 
-  //   Solar System Animation
-  .solarsystem-container {
-    display: none;
+      max-width: 500px;
+      left: 15%;
+      font-size: small;
+      max-height: fit-content;
+      max-width: 100%;
+      
+      h1 {
+        font-size: 30px;
+        bottom: 50px;
+        
+        .a-letter {
+          font-size: 40px;
+        }
+      }
+      
+      p {
+        position: relative;
+        font-size: 14px;
+      }
+      .flat-button {
+        color:black;
+        font-family: sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 2px;
+        animation: fadeIn 1s 5s backwards;
+        float: left;
+        padding: 10px 5px;
+        border: 1px solid black;
+  
+        &:hover {
+          background-color: #fdf700;
+          color: black;
+          border: 1px solid white;
+        }
+      }
+    }
+    .loader-active{
+      left: 8%;
+      top:-1%
+    }
+    
+    .solarsystem-container {
+      display: none;
+    }
   }
 }
+

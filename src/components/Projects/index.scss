@@ -100,8 +100,8 @@
       position: relative;
       top: -5%;
       flex-wrap: wrap;
-      font-family: 'Poppins';
-      color: rgb(2, 2, 2);
+      font-family: 'Source Code Pro', monospace;
+      color: rgb(154, 12, 38);
       font-weight: 600;
       justify-content: center;
       align-items: center;
@@ -168,6 +168,95 @@
         &::after {
           transform: scaleX(1);
           //transform-origin: bottom left;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    top: 40px;
+    right: 20%;
+
+    .projects-title {
+      top: 10px;
+      left: 15%;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 10px;
+      overflow-x: auto;
+      margin-left: 0;
+      position: relative;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      left: 10px;
+    }
+
+    .project {
+      right: -10px;
+      width: 100%;
+      height: 300px;
+      padding: 20px;
+      box-shadow: 0px 0px 5px 0px hsl(254, 53%, 12%);
+      .projectImg{
+        width: 230px;
+      }
+      small{
+        &:hover{
+          transform: none;
+        }
+      }
+      &:hover {
+        box-shadow:none;
+        transform: none;
+        background-color: rgba(53, 52, 52, 0.371);
+        .projectImg{
+          width: 230px;
+          height: 600px;
+        }
+
+        .keySkills {
+          opacity: 1;
+        }
+        .projectImg {
+          opacity: 1;
+        }
+        .projectDesc {
+          opacity: 1;
+        }
+      }
+
+      .projectDesc {
+        opacity: 1;
+      }
+
+      h3 {
+        font-size: 15px;
+        top: 0;
+        &::after {
+          top: 25px;
+        }
+      }
+
+      img {
+        max-height: 100px;
+      }
+
+      .keySkills {
+        font-size: 8px;
+        opacity: 1;
+        padding: 10px;
+
+        span {
+          padding: 0.5rem;
         }
       }
     }

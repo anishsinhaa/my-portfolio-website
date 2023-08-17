@@ -34,7 +34,7 @@ const projects = [
     desc: 'Personal Travel Journal is a website which contains pictures of my travels',
     github:"https://github.com/anishsinhaa/travel-journal",
     deploy:"https://mytraveljournal-as.netlify.app",
-    keyskills:["ReactJS", "JavaScript", "HTML", "CSS"]
+    keyskills:["ReactJS","Firebase", "JavaScript", "HTML", "CSS"]
   },
   {
     img: notes,

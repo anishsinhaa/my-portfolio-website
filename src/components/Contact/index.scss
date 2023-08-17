@@ -104,3 +104,46 @@
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  .contact {
+    position: relative; /* Adjust positioning */
+    
+    h1 {
+      top: 5%;
+      left: 15%;
+    }
+    
+    p {
+      left: 15%;
+      font-size: larger;
+      width: 240px;
+      top: 5%;
+    }
+    
+    .contact-form {
+      font-size: 10px;
+      right: -50px;
+      top: 5%;
+      width: 200px; /* Adjust width for mobile */
+      
+      ul {
+        li.half {
+          width: 100%; /* Adjust width for mobile */
+          margin-left: 0;
+          float: none;
+          
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        
+        input[type='text'],
+        input[type='email'],
+        textarea {
+          width: 30000px;
+        }
+      }
+    }
+  }
+}
+
