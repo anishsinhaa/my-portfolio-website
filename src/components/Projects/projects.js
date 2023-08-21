@@ -11,6 +11,8 @@ import snakeGame from '../../assets/images/Projects/snakegame.png'
 
 
 
+
+
 const projects = [
   {
     img: memegen,
@@ -50,7 +52,7 @@ const projects = [
     desc: 'Chat.zeus is a chat app where you can create account and chat with friends',
     github:"https://github.com/anishsinhaa/Chat.zeus",
     deploy:"https://chat-zeus.netlify.app",
-    keyskills:["ReactJS","Firebase|FireStore", "JavaScript", "HTML", "CSS"]
+    keyskills:["ReactJS","Firebase", "JavaScript", "HTML", "CSS"]
   },
   {
     img: cineverse,
@@ -65,21 +67,21 @@ const projects = [
     title: 'TextCrypt',
     desc: 'TextCrypt is a text encryption & decryption tool built using Python.',
     github:"https://github.com/anishsinhaa/TextCrypt",
-    keyskills:["Pyhton"]
+    keyskills:["Python"]
   },
   {
     img: CurrencyConverter,
     title: 'CurrencyConverter',
     desc: 'Simple Currency Converter built using Java which uses ExchangeRates Api to get the current exchange rates',
     github:"https://github.com/anishsinhaa/CurrencyConverter",
-    keyskills:["JAVA", "JavaSwing","JavaAWT"]
+    keyskills:["Java", "JavaSwing","JavaAWT"]
   },
   {
     img: snakeGame,
     title: 'Fang-Frenzy',
     desc: 'Fang-Frenzy is a Snake Game built with JAVA. It randomly spawns food for the snake to eat and score points.',
     github:"https://github.com/anishsinhaa/FangFrenzy-SnakeGame",
-    keyskills:["JAVA", "JavaSwing","JavaAWT"]
+    keyskills:["Java", "JavaSwing","JavaAWT"]
   }
   
 ]

@@ -1,117 +1,365 @@
+.section {
+  transition: all 0.3s ease-out;
+  position: relative;
+  font-family: 'Poppins';
+  // height: 100%;
+  height: 420px;
+  width: 100%;
+  // background-color: blue;
+  // padding: 10px;
+  padding-top: 30px;
+  top: -60px;
+  color: black;
+  .aboutMe-nav {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    // top: -60px;
+    overflow: hidden;
+    // background-color: #333;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    gap: 10px;
+    width: 100%;
+    top: -12px;
+    height: 20%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    ul {
+      display: flex;
+      height: 95%;
+      width: 100%;
+      list-style-type: none;
+      padding: 10px;
+      left: 20px;
+      align-items: center;
+      .active {
+        box-shadow: 0px 0px 10px 0px rgb(255, 33, 33);
+        background-color: #fdf700;
+        color: black;
+        border: 1px solid rgb(142, 1, 1);
+        transition: all 0.7s ease-out;
+      }
+      li {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        display: grid;
+        text-align: center;
+        height: 30px;
+        font-size: 18px;
+        font-family: 'Poppins';
+        padding: 19px;
+        color: black;
+        font-weight: 400;
+        letter-spacing: 4px;
+        animation: fadeIn 1s 2.5s backwards;
+        float: left;
+        padding: 20px 10px;
+        border: 1px solid black;
 
-.stage-cube-cont{
+        &:hover {
+          transition: all 0.7s ease-out;
+          box-shadow: 0px 0px 10px 0px white;
+          background-color: #fdf700;
+          color: black;
+          border: 1px solid white;
+          transition: all 0.7s ease-out;
+        }
+      }
+    }
+  }
+  .aboutMe-main {
+    transition: all 0.3s ease-out;
+    animation: fadeIn 1s 3s backwards;
+    position: relative;
+    border-radius: 20px;
+    top: -20px;
+    height: 300px;
+    margin: 0px 0px;
+    // background-image: url(../../assets/images/earth.png);
+    .section-content {
+      transition: all 0.3s ease-out;
+      // background-color: #fdf700;
+      justify-content: center;
+      height: 100%;
+      .section-title {
+        text-align: left;
+        padding: 20px;
+        padding-bottom: 0px;
+        font-size: 28px;
+      }
+      .interests-p{
+        font-size: 22px;
+      }
+      .certifications-ul{
+        display: flex;
+        text-align: center;
+        // display: block;
+        padding: 0px;
+        font-size: 10px;
+        list-style-type: none;
+        a{
+          text-decoration: none;
+        }
+        li{ 
+          width: 160px;
+          height: 100px;
+          cursor: default;
+          display: flex;
+          .info{
+            display: none;
+            color: black;
+            font-size: 15px;
+          }
+          img{
+            width: 200px;
+          }
+          border-radius: 10px;
+          &:hover{ 
+            cursor: pointer;
+            background-color: #dddcdc;
+            img{
+              display: none;
+            }
+            .info{
+              transition: none;
+              display: flex;
+            }
+             transform: scale(1.2);
+            //  transition: all 0.3s ease-out;
+          }
+          
+        }
+      }
+      ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        gap: 60px;
+        font-size: 20px;
+        list-style-type: none;
+        li{
+          text-align: center;
+          cursor: default;
+          display: flex;
+          padding: 20px;;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px 0px #ffffff71;
+          &:hover{
+            
+             transform: scale(1.2);
+             transition: all 0.3s ease-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+//cube spinner
+.stage-cube-cont {
   animation: fadeIn 1s 2s backwards;
   width: 50%;
   height: 100%;
-  top:0;
+  top: 0;
   padding-top: 18%;
   margin-left: 0;
   position: absolute;
   right: 0;
-  overflow: hidden;}
-  
+  overflow: hidden;
+}
 
-  .cubespinner{
-    animation-name: spincube;
-    animation-timing-function:ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
+.cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
 
-    div{
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border: 1px solid #ccc;
-      background: rgba(255,255,255,0.4);
-      font-size: 100px;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 0 20px 0px gold;
-      text-align: center;
-    }
-    .face1{
-      transform: translateZ(100px);
-    }
-    .face2{
-      transform: rotateY(90deg) translateZ(100px);
-    }
-    .face3{
-      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    }
-    .face4{
-      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face5{
-      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face6{
-      transform: rotateX(-90deg) translateZ(100px);
-    }
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px 0px gold;
+    text-align: center;
   }
-
-  @keyframes spincube{
-    from,
-    to{
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    16%{
-      transform: rotateY(-90deg);
-    }
-    33%{
-      transform: rotateY(-90deg) rotateZ(90deg);
-    }
-    50%{
-      transform: rotateY(-180deg) rotateZ(90deg);
-    }
-    60%{
-      transform: rotateY(-270deg) rotateZ(90deg);
-    }
-    83%{
-      transform: rotateX(90deg);
-    }
+  .face1 {
+    transform: translateZ(100px);
   }
-
-  .aboutMe-title{
-    position: relative;
-    top: -40px;
-    cursor:context-menu;
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px);
   }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+}
 
-  @media only screen and (max-width: 600px) {
-    .container.about {
-      left: -50px;
-      top: 30px;
-      font-size: 10px;
-      .text-zone {
-        /* Adjust styles for text zone in smaller screens */
-        font-size: 10px;
-        right: 1px;
-        padding-left: 0px;
-        h1 {
-          font-size: 20px;
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  60% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+.aboutMe-title {
+  position: relative;
+  top: -40px;
+  cursor: context-menu;
+}
+
+@media only screen and (max-width: 600px) {
+  .container.about {
+    left: -50px;
+    top: 30px;
+    font-size: 10px;
+    .text-zone {
+      font-family: "Poppins";
+      right: 1px;
+      padding-left: 0px;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        top: -20px;
+        left: -25px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        width: 250px;
+      }
+      .aboutMe-title {
+        left: -30px;
+        top: 10px;
+      }
+      .section{
+        .aboutMe-nav{
+          display: flex;
+          width: 300px;
+          left: -60px;
+          padding-top: 18px;
+          ul {
+            li {
+              height: 9px;
+              font-size: 10px;
+              font-family: 'Poppins';
+              color: black;
+              font-weight: 400;
+              letter-spacing: 2px;
+              animation: fadeIn 1s 2.5s backwards;
+              padding: 10px 2px;
+              border: 1px solid black;
+            }
+          }
         }
-        p {
-          top: -20px;
-          left: -25px;
-          font-size: 12px;
-          width: 250px;
-        }
-        .aboutMe-title{
-          left: -30px;
-          top: 10px;
+        .aboutMe-main {
+          left: -60px;
+          .section-content {
+            height: 400px;
+            width: 290px;
+            .section-title {
+              text-align: left;
+              padding: 10px;
+              padding-bottom: 0px;
+              font-size: 25px;
+            }
+            .interests-p{
+              font-size: 16px;
+            }
+            .certifications-ul{
+              display: flex;
+              padding: 10px;
+              gap: 1px;
+              li{ 
+                width: 140px;
+                justify-items: center;
+                display: grid;
+                height: 100%;
+                padding: 0 0;
+                gap: 2px;
+                .info{
+                  display: flex;
+                  font-size: 12px;
+                  padding: 20px;
+                }
+                img{
+                  padding-top: 10px;
+                  width: 100px;
+                }
+              }
+            }
+            ul{
+              display: grid;
+              grid-template-columns: auto auto auto;
+              padding: 2px;
+              gap: 10px;
+              font-size: 12px;
+              list-style-type: none;
+              li{
+                text-align: center;
+                cursor: default;
+                display: flex;
+                padding: 10px;;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px 0px #ffffff71;
+                &:hover{
+                  
+                   transform: scale(1.05);
+                   transition: all 0.3s ease-out;
+                }
+              }
+            }
+          }
         }
       }
-      .loader-active{
-        left: 55%;
-      }
-  
-      .stage-cube-cont {
-        /* Adjust styles for cube spinner container in smaller screens */
-        display: none;
-      }
+    }
+    .loader-active {
+      left: 55%;
+    }
+
+    .stage-cube-cont {
+      /* Adjust styles for cube spinner container in smaller screens */
+      display: none;
     }
   }
+}

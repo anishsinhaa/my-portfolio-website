@@ -9,14 +9,21 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import './index.scss'
+import React, { useState } from 'react'
+import cisco from '../../assets/images/certificates/cisco-certificate.png'
+import accenture from '../../assets/images/certificates/accenture-certificate.png'
 
 const About = () => {
+  const [activeSection, setActiveSection] = useState('skills')
+  const handleSectionClick = (section) => {
+    setActiveSection(section)
+  }
   return (
     <div className="container about">
       <Loader type="pacman" />
       <div className="text-zone">
-        <h1 className='aboutMe-title'>About Me</h1>
-        <p>
+        <h1 className="aboutMe-title">About Me</h1>
+        <p className='aboutme-p'>
           I am a dedicated and highly ambitious individual hailing from Patna,
           India. Currently, I am pursuing a Masters in Computer Application from
           Birla Institute of Technology, which is renowned as one of India's
@@ -24,30 +31,112 @@ const About = () => {
           computer science, my ultimate aspiration is to forge a highly
           successful career in this dynamic and rapidly evolving field.
         </p>
-        <p>
-          <small>
-            <h4 style={{ padding: '2px', color: '#ffd700' }}>Skills</h4>
+        <div className="section">
+          <nav className="aboutMe-nav">
             <ul>
-              <li>Java | JavaScript | ReactJS | HTML | CSS | Pyhton.</li>
-              <li>Certification in Developer Virtual Experience Program by Accenture Nordics on the Forage Website.</li>
-              <li>Certification in Intro to Software Engineering Virtual Experience Program by Cisco on the Forage Website.</li>
+              <li
+                className={activeSection === 'skills' ? 'active' : ''}
+                onClick={() => handleSectionClick('skills')}
+              >
+                SKILLS
+              </li>
+              <li
+                className={activeSection === 'certifications' ? 'active' : ''}
+                onClick={() => handleSectionClick('certifications')}
+              >
+                CERTIFICATIONS
+              </li>
+              <li
+                className={activeSection === 'interests' ? 'active' : ''}
+                onClick={() => handleSectionClick('interests')}
+              >
+                INTERESTS | HOBBIES
+              </li>
             </ul>
-          </small>
-        </p>
-
-        <p>
-          <small>
-            <h4 style={{ padding: '2px', color: '#ffd700' }}>
-              Interets / Hobbies
-            </h4>
-            I have a wide range of interests that include photography,
-            traveling, music,and gaming. These passions bring joy and
-            fulfillment to my life, allowing me to express creativity, explore
-            new places, appreciate diverse melodies, and engage in immersive
-            gaming experiences.
-          </small>
-        </p>
+          </nav>
+          <div className="aboutMe-main">
+            {activeSection === 'skills' && (
+              <div className="section-content skills">
+                <h2 className="section-title">Skills</h2>
+                <ul>
+                  <li style={{ backgroundColor: '#f89820' }}>
+                    Java &nbsp;
+                    <FontAwesomeIcon icon={faJava} color="#5382a1" />
+                  </li>
+                  <li style={{ backgroundColor: '#5382a1' }}>
+                    JavaScript &nbsp;
+                    <FontAwesomeIcon
+                      icon={faJsSquare}
+                      color="#EFD81D"
+                    ></FontAwesomeIcon>
+                  </li>
+                  <li style={{ backgroundColor: '#555759' }}>
+                    ReactJS &nbsp;
+                    <FontAwesomeIcon
+                      icon={faReact}
+                      color="#5ED4F4"
+                    ></FontAwesomeIcon>
+                  </li>
+                  <li style={{ backgroundColor: '#28A4D9' }}>
+                    HTML &nbsp;
+                    <FontAwesomeIcon
+                      icon={faHtml5}
+                      color="#F06529"
+                    ></FontAwesomeIcon>{' '}
+                  </li>
+                  <li style={{ backgroundColor: '#D5F3FE' }}>
+                    CSS &nbsp;
+                    <FontAwesomeIcon
+                      icon={faCss3}
+                      color="#28A4D9"
+                    ></FontAwesomeIcon>
+                  </li>
+                  <li style={{ backgroundColor: '#FFD43B' }}>
+                    Pyhton &nbsp;
+                    <FontAwesomeIcon
+                      icon={faPython}
+                      color="#4584b6"
+                    ></FontAwesomeIcon>
+                  </li>
+                </ul>
+              </div>
+            )}
+            {activeSection === 'certifications' && (
+              <div className="section-content certifications">
+                <h2 className="section-title">Certifications</h2>
+                <ul className='certifications-ul'>
+                <a href='https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_CdWJpsPb78Ave2nBq_1689417065468_completion_certificate.pdf'>
+                  <li>
+                    <img src={cisco} alt='Accenture-Certificate'/>
+                    <div className='info'>Certification in Developer Virtual Experience Program by
+                    Accenture Nordics on the Forage Website.</div>
+                  </li>
+                  </a>
+                  <a href='https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Cisco/kinDTvjiZRcYbwqLo_Cisco_CdWJpsPb78Ave2nBq_1689959775317_completion_certificate.pdf'>
+                  <li>
+                  <img src={accenture} alt='Accenture-Certificate'/>
+                    <div className='info'>Certification in Intro to Software Engineering Virtual
+                    Experience Program by Cisco on the Forage Website.</div>
+                  </li></a>
+                </ul>
+              </div>
+            )}
+            {activeSection === 'interests' && (
+              <div className="section-content interests">
+                <h2 className="section-title">Interets / Hobbies</h2>
+                <div className='interests-p'>I have a
+                wide range of interests that include photography, traveling,
+                music,and gaming. These passions bring joy and fulfillment to my
+                life, allowing me to express creativity, explore new places,
+                appreciate diverse melodies, and engage in immersive gaming
+                experiences.</div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
+
+      {/* cube */}
       <div className="stage-cube-cont">
         <div className="cubespinner">
           <div className="face1">

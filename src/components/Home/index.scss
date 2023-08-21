@@ -11,7 +11,7 @@
       font-family: 'Coolvetica';
       font-size: 55px;
       font-weight: 400;
-      cursor:context-menu;
+      cursor: context-menu;
       .intro {
         animation: fadeIn 1s 2.5s backwards;
       }
@@ -21,17 +21,21 @@
       .a-letter {
         font-size: 90px;
         color: #fdf700;
+        transition: all 0.3s ease-in;
+        &:hover{
+          font-size: 110px;
+        }
       }
     }
     p {
-      cursor:context-menu;
+      cursor: context-menu;
       color: black;
       font-family: 'Poppins';
       font-size: 30px;
       animation: fadeIn 1s 4s backwards;
     }
     .flat-button {
-      color:black;
+      color: black;
       font-family: sans-serif;
       font-size: 13px;
       font-weight: 400;
@@ -43,9 +47,12 @@
       border: 1px solid black;
 
       &:hover {
+        transition: all 0.7s ease-out;
+        box-shadow: 0px 0px 10px 0px white;
         background-color: #fdf700;
         color: black;
         border: 1px solid white;
+        transition: all 1s ease-out;
       }
     }
   }
@@ -53,7 +60,7 @@
   .solarsystem-container {
     animation: fadeIn 1s 5s backwards;
     border-radius: 50%;
-    left:40%;
+    left: 40%;
     margin: 200px;
     height: 100vh;
     display: flex;
@@ -65,8 +72,35 @@
     width: 40em;
     height: 40em;
     position: absolute;
+    box-shadow: 0px 0px 50px 20px white;
+    transition: all 1.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.701);
+      transform: scale(1.25);
+      .sun {
+        transform: scale(1.25);
+        box-shadow: 0px 0px 20px 10px rgba(249, 4, 4, 0.571);
+        background-color: rgb(255, 85, 0);
+      }
+      .earth::before{
+        box-shadow: 0px 0px 10px 10px  rgb(4, 246, 20);
+      }
+      .moon::before {
+        top: 0.8em;
+        right: 0.2em;
+        width: 1.2em;
+        height: 1.2em;
+        box-shadow: 0px 0px 10px 5px rgba(245, 117, 117, 0.603);
+      }
+ 
+    }
+    &:hover::after {
+      transition: all 3s ease-in;
+    }
   }
   .sun {
+    transition: all 1.2s ease-in-out;
     position: absolute;
     top: 15em;
     left: 15em;
@@ -74,7 +108,7 @@
     height: 10em;
     background-color: yellow;
     border-radius: 50%;
-    box-shadow: 0 0 3em white;
+    box-shadow: 0 0 3em yellow;
   }
   .earth,
   .moon {
@@ -100,6 +134,7 @@
   }
   .earth::before,
   .moon::before {
+    transition: all 1.2s ease-in-out;
     content: '';
     position: absolute;
     border-radius: 50%;
@@ -109,6 +144,7 @@
     right: 2.8em;
     width: 3em;
     height: 3em;
+    box-shadow: 0 0 3em rgb(108, 113, 144);
     background-color: rgb(48, 64, 170);
   }
   .moon::before {
@@ -125,8 +161,8 @@
   }
   @media only screen and (max-width: 600px) {
     overflow: hidden;
-  
-    .page{
+
+    .page {
       max-width: 100%;
     }
     .text-zone {
@@ -135,22 +171,22 @@
       font-size: small;
       max-height: fit-content;
       max-width: 100%;
-      
+
       h1 {
         font-size: 30px;
         bottom: 50px;
-        
+
         .a-letter {
           font-size: 40px;
         }
       }
-      
+
       p {
         position: relative;
         font-size: 14px;
       }
       .flat-button {
-        color:black;
+        color: black;
         font-family: sans-serif;
         font-size: 8px;
         font-weight: 400;
@@ -160,7 +196,7 @@
         float: left;
         padding: 10px 5px;
         border: 1px solid black;
-  
+
         &:hover {
           background-color: #fdf700;
           color: black;
@@ -168,14 +204,13 @@
         }
       }
     }
-    .loader-active{
+    .loader-active {
       left: 8%;
-      top:-1%
+      top: -1%;
     }
-    
+
     .solarsystem-container {
       display: none;
     }
   }
 }
-

@@ -22,11 +22,11 @@ const Home = () => {
           enjoy tackling diverse challenges.
         </p>
         <br/>
-        <span><Link to="/about" className="flat-button">
-          ABOUT ME
-        </Link></span>
         <span><Link to="/projects" className="flat-button">
           PROJECTS
+        </Link></span>
+        <span><Link to="/about" className="flat-button">
+          ABOUT ME
         </Link></span>
         <span><Link to="/contact" className="flat-button">
           CONTACT ME

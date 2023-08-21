@@ -38,8 +38,8 @@
     //flex-basis: calc(33.33% - 20px);
     margin: 10px;
     padding: 20px;
-    background-color: #1a11109c;
-    box-shadow: 0px 0px 10px 0px hsl(254, 53%, 12%);
+    background-color: rgba(0, 0, 0, 0.751);
+    box-shadow: 0px 0px 10px 0px hsla(255, 54%, 12%, 0.515);
     border-radius: 12px;
     .projectDesc {
       opacity: 0;
@@ -81,8 +81,9 @@
         bottom: 0;
         left: 0;
         background-color: #ffffff;
+        transition: all 1s ease-out;
         //transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
+        // transition: transform 0.25s ease-out;
       }
     }
     img {
@@ -101,19 +102,64 @@
       top: -5%;
       flex-wrap: wrap;
       font-family: 'Source Code Pro', monospace;
-      color: rgb(154, 12, 38);
+      color: rgb(2, 2, 2);
       font-weight: 600;
       justify-content: center;
       align-items: center;
-      font-size: 8px;
+      font-size: 12px;
       opacity: 0;
       padding: 10px;
-      gap: 2px;
+      gap: 5px;
+      .ReactJS{
+        background-color: #61DBFB;
+      }
+      .API{
+        background-color: rgb(255, 255, 255);
+      }
+      .JavaScript{
+        background-color: #F0DB4F;
+      }
+      .HTML{
+        background-color: #E34C26;
+      }
+      .CSS{
+        background-color: #2565AE;
+      }
+      .Python{
+        background-color:#FFD43B;
+      }
+      .Firebase{
+        background-color:#F5820D;
+      }
+      .Java{
+        background-color: #f89820;
+      }
+      .JavaSwing{
+        background-color: #5382a1;
+      }
+      .JavaAWT{
+        background-color: #f89820;
+      }
       span {
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        padding: 0.5rem;
+        padding: 0.3rem;
         border-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.418);
+        div{
+          display: none;
+        }
+        &:hover{
+          box-shadow: 0px 0px 10px 0px #ffffff;
+           transform: scale(1.2);
+           font-size: 13px;
+           transition: all 0.3s ease-out;
+          div{
+            display: flex;
+          }
+        }
       }
     }
     small {
@@ -147,13 +193,15 @@
       }
     }
     &:hover {
-      box-shadow: 0px 0px 10px 0px #ffd700;
+      box-shadow: 0px 0px 12px 2px #f4d004;
       transform: scale(1.1);
-      background-color: rgba(255, 255, 255, 0.053);
+      transition: all 0.3s ease-out;
+      background-color: rgba(0, 0, 0, 0.978);
       .keySkills {
         opacity: 1;
       }
       .projectImg {
+        
         height: 5px;
         opacity: 0;
       }
@@ -166,6 +214,7 @@
         margin-top: 0px;
         top: 0px;
         &::after {
+          transition: all 0.3s ease-out;
           transform: scaleX(1);
           //transform-origin: bottom left;
         }
