@@ -124,12 +124,8 @@ const About = () => {
             {activeSection === 'interests' && (
               <div className="section-content interests">
                 <h2 className="section-title">Interets / Hobbies</h2>
-                <div className='interests-p'>I have a
-                wide range of interests that include photography, traveling,
-                music,and gaming. These passions bring joy and fulfillment to my
-                life, allowing me to express creativity, explore new places,
-                appreciate diverse melodies, and engage in immersive gaming
-                experiences.</div>
+                <div className='interests-p'>My diverse range of interests, including photography, travel, music, and gaming, enrich my life with creativity, exploration, and immersion. 
+                These passions reflect my ability to appreciate diversity and engage in fulfilling experiences.</div>
               </div>
             )}
           </div>
